@@ -10,18 +10,18 @@
 //-----------------
 
 //Main Color Variables
-$main-color: #f7691f;
-$dark-color: #ea281f; //Link Color
-$light-color: #f4e00c; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
-$bg-color: #f7fe81; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
+$main-color: #4a4a4a; //rmady //#f7691f;
+$dark-color: #6495ed; // labany// #0099ff; // #ea281f; //Link Color
+$light-color: #ee1289; //foshia 3'am2 // #f4e00c; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
+$bg-color: #ff40a6; //foshia fat7 // #f7fe81; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 
 //Main BG Color Variables
-$main-bg: #822537;
+$main-bg: #00008b; //azr2 3'am2 // #822537;
 $main-bg-60: lighten($main-bg, 18.5%); //Main Border/HR Color
 $main-bg-25: lighten($main-bg, 25%); 
 
 //Secondary Color Variables
-$secondary: #b5a4b7;
+$secondary: #dfdfdf; //rmadi fat7 // #b5a4b7;
 $secondary-50: lighten($secondary, 9%);
 $secondary-25: lighten($secondary, 20%); //Important Heading BG Color 
 
@@ -57,12 +57,12 @@ $serif: $theme-serif-font, $serif;
 //  Theme Element Assignments
 //-----------------
 
-$body-bg: $gray-1;
-$container-bg: $gray-1;
+$body-bg: $gray-1; // linear-gradient($main-color 0%, $secondary); // $gray-1;
+$container-bg:  linear-gradient($gray-1 0%, $secondary); // $gray-1;
 $login-register-bg: $gray-1;
 $content-wrapper-bg: $gray-1;
 $header-image: none;
-$header-bg: transparentize(lighten($secondary, 18.5%), .25);
+$header-bg: transparentize(lighten($secondary, 0%), .25);  //18.5
 $courseware-header-image: none;
 $courseware-header-bg: transparentize(lighten($secondary, 18.5%), .25);
 $footer-bg: $secondary-25;
@@ -186,6 +186,9 @@ $footer_margin: ($baseline/4) 0;
 //  CSS BG Images
 //-----------------
 $homepage-bg-image: url('../themes/default/images/sunrise.jpg');
+$homepage-bg-size: 100% 100%;
+$homepage-bg-repeat: no-repeat;
+
 
 $login-banner-image: none;
 $register-banner-image: none;
